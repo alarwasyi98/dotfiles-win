@@ -3,7 +3,7 @@ These are my user-specific configuration files that I use to personalize my Wind
 
 ## Prerequisites
 - [Nerd Font](nerfonts.com) required!
-- Actually a Shell Terminal. Whatever you have, but in my case, I use Windows Terminal with Powershell 7
+- Of course, a Shell Terminal. Whatever you have, but in my case, I use Windows Terminal with [Powershell 7](https://github.com/PowerShell/PowerShell)
 - Starship installed. You can read their [documentation](https://starship.rs) to do this
 
 ## Installation
@@ -20,6 +20,6 @@ If you same as me that using Powershell as the primary terminal in your machine,
   - Run this command:
 
 ```
-notepad $SHELL
+notepad $PROFILE
 ```
   -  You will notice that your computer is automatically open a Notepad Windows. Copy my setting in ```.pwsh``` folder
