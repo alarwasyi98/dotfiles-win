@@ -11,6 +11,8 @@ These are my user-specific configuration files that I use to personalize my Wind
 ``` 
 mkdir -p $HOME/.config && touch $HOME/.config/starship.toml 
 ```
+- Open it with your loved Code Editor or even Notepad and Copy the template in my ```.starship``` folder.
+- Enjoy!
 ### Windows Terminal Configuration 
 If you same as me that using Powershell as the primary terminal in your machine, you have to do this: 
   - Make a folder called "Powershell" in your ```Documents``` folder
