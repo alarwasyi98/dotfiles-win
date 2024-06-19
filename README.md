@@ -2,7 +2,8 @@
 These are my user-specific configuration files that I use to personalize my Windows experience.
 
 ## Prerequisites
-- a Shell Terminal. Whatever you have, but in my case, I use Windows Terminal with Powershell 7
+- [Nerd Font](nerfonts.com) required!
+- Actually a Shell Terminal. Whatever you have, but in my case, I use Windows Terminal with Powershell 7
 - Starship installed. You can read their [documentation](https://starship.rs) to do this
 
 ## Installation
