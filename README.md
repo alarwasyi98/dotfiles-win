@@ -10,25 +10,33 @@ These are my user-specific configuration files that I use to personalize my Wind
 - Install the [Nerd Font](nerfonts.com) you want. Or if you wanna install directly from my ```ubuntu_mono_install.sh``` , go ahead for it.
 - Configure starship with make a directory that provide a ```starship.toml``` file. All configurations and customization will be done in it.
 - <b>Powershell:</b> Open terminal and run this command 
-``` 
+``` PowerShell
 mkdir -p $HOME/.config && touch $HOME/.config/starship.toml 
 ```
-- <b>Bash</b>
-``` 
+## Windows Terminal Configuration 
+If you same as me that using Powershell as the primary terminal in your machine, you have to do this: 
+  - Make a folder called "Powershell" in your ```Documents``` folder. Or if its exist;
+  - Run this command:
+
+``` shell
+notepad $PROFILE
+```
+  -  You will notice that your computer is automatically open a Notepad Windows. Copy my setting in ```./.pwsh/Microsoft.PowerShell_Profile.ps1``` 
+  -  Execute the ```starship.toml``` and apply the theme.
+  -  Enjoy!
+## Linux Bash Configuration
+
+- Run [setup.sh](alarwasyi98/dotfiles/.bash/setup.sh) (this is optional, if you like to using old school way, go for it)
+- ***!*** The [setup.sh](alarwasyi98/dotfiles/.bash/setup.sh) is including: Starship Installation, Zoxide Installation, Fuzzyfinder Installation and another dependencies.
+- Make a Starship configuration:
+``` bash
 # create starship configuration 
 mkdir -p ~/.config && touch ~/.config/starship.toml 
-
+```
+- Add these lines to ```.bashrc``` file at ```~/.bashrc```
+```bash
 # Add the following to the end of ~/.bashrc
 eval "$(starship init bash)"
 ```
 - Open the ```starship.toml``` file with your loved Code Editor or even Notepad and Copy the template in my ```.starship``` folder.
 - Enjoy!
-## Windows Terminal Configuration 
-If you same as me that using Powershell as the primary terminal in your machine, you have to do this: 
-  - Make a folder called "Powershell" in your ```Documents``` folder
-  - Run this command:
-
-```
-notepad $PROFILE
-```
-  -  You will notice that your computer is automatically open a Notepad Windows. Copy my setting in ```.pwsh``` folder
