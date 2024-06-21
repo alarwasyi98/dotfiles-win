@@ -1,5 +1,5 @@
-# alarwasyi98 Terminal Look
-These are my user-specific configuration files that I use to personalize my Windows experience.
+# Minimalist Terminal Look
+These are my user-specific configuration files that I use to personalize my Windows experience. This is first time for me to create a README file, so i'll explain these in dummy ways. 
 
 ## Prerequisites
 - [Nerd Font](nerfonts.com) required! which I use currently is [UbuntuMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/UbuntuMono.zip)
@@ -25,15 +25,15 @@ notepad $PROFILE
   -  Execute the ```starship.toml``` and apply the theme.
   -  Enjoy!
 ## Linux Bash Configuration
-
+- If you are using [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/about), you should through the different way to setup these terminal personalization. Here it is!
 - Run [setup.sh](alarwasyi98/dotfiles/.bash/setup.sh) (this is optional, if you like to using old school way, go for it)
-- ***!*** The [setup.sh](alarwasyi98/dotfiles/.bash/setup.sh) is including: Starship Installation, Zoxide Installation, Fuzzyfinder Installation and another dependencies.
-- Make a Starship configuration:
+> The [setup.sh](alarwasyi98/dotfiles/.bash/setup.sh) is including: Starship Installation, Zoxide Installation, Fuzzyfinder Installation and another dependencies. But you still can provide to customize your own script! I use ChrisTitus Setup for this script. Read his [mybash Docs](https://github.com/ChrisTitusTech/mybash) 
+- Make a Starship directory and configuration file:
 ``` bash
 # create starship configuration 
 mkdir -p ~/.config && touch ~/.config/starship.toml 
 ```
-- Add these lines to ```.bashrc``` file at ```~/.bashrc```
+- Run command ```vim ~/.bashrc```, Click ```i``` and Add these lines to ```.bashrc```. Close vim by press ```esc```, ```:wq```
 ```bash
 # Add the following to the end of ~/.bashrc
 eval "$(starship init bash)"
