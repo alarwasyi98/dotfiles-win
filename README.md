@@ -7,7 +7,7 @@ These are my user-specific configuration files that I use to personalize my Wind
 - Starship installed. You can read their [documentation](https://starship.rs) to do this
 
 ## Installation
-- Install the [Nerd Font](nerfonts.com) you want. Or if you wanna install directly from my `ubuntu_mono_install.sh` [ubuntu mono](.fonts/ubuntu_mono_install.sh), go ahead for it.
+- Install the [Nerd Font](nerfonts.com) you want. Or if you wanna install directly from my [UbuntuMono Nerd Font](.fonts/install_ubuntu_mono_nerd_font.sh), go ahead for it.
 - Configure starship with make a directory that provide a `starship.toml` file. All configurations and customization will be done in it.
 - <b>Powershell:</b> Open terminal and run this command 
 ``` PowerShell
@@ -27,6 +27,7 @@ notepad $PROFILE
 ## Linux Bash Configuration
 - If you are using [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/about), you should through the different way to setup these terminal personalization. Here it is!
 - Run [setup.sh](.bash/setup.sh) (this is optional, if you like to using old school way, go for it)
+> [!WARNING]
 > The [setup.sh](.bash/setup.sh) is including: Starship Installation, Zoxide Installation, Fuzzyfinder Installation and another dependencies. But you still can provide to customize your own script! I use ChrisTitus Setup for this script. Read his [mybash Docs](https://github.com/ChrisTitusTech/mybash) 
 - Make a Starship directory and configuration file:
 ``` bash
