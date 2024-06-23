@@ -41,3 +41,30 @@ eval "$(starship init bash)"
 ```
 - Open the `starship.toml` file with your loved Code Editor or even Notepad and Copy the template in my `.starship` folder.
 - Enjoy!
+
+## Shell Logo Configuration
+![shell-image](/images/screenshot-2.png)
+
+To change the `$SHELL` terminal icon that you are currently using, you must change it via Windows Terminal settings or via `settings.json`. 
+### Via-Windows Terminal Setting
+- Open [Windows Terminal](https://github.com/microsoft/terminal) settings
+- Choose Shell profile that you want to change
+- Click `Icon` menu and `browse` to the target directory
+> [!WARNING]
+> Put the icons file in a permanent directory. If you move the icon to another directory or even erase it, the icon will come into default.
+- Repeat the steps for another profiles.
+### Via-setting.json
+- Open [Windows Terminal](https://github.com/microsoft/terminal) settings
+- Click the `gear` icon in bottom-left
+- add 
+```js
+            {
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "hidden": false,
+                // add the following line that refer to the target directory
+                "icon": "C:\\Users\\user\\Icons\\WindowsTerminalIcons\\ubuntumono.png",
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            },
+```
+- Enjoy!
