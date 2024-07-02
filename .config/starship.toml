@@ -87,7 +87,7 @@ disabled = true
 format = "with [ $version]($style) "
 
 [php]
-format = "[󰌟  $version](bold purple)"
+format = "with [󰌟  $version](bold purple)"
 
 [lua]
 format = "with [󰢱 lua ](bold green)"

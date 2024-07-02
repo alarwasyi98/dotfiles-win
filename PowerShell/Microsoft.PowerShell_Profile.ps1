@@ -1,8 +1,18 @@
+$ScriptsPath = Join-Path $PSScriptRoot "Scripts"
+
+# Load Aliases
+. (Join-Path $ScriptsPath "Aliases.ps1")
+
+# Load Functions
+. (Join-Path $ScriptsPath "Functions.ps1")
+
+# Load Modules
+. (Join-Path $ScriptsPath "Modules.ps1")
+
 # Starship Prompt Conf
+$ENV:STARSHIP_CACHE = "$HOME\AppData\Local\Temp"
 $ENV:STARSHIP_CONFIG = "$HOME\.config\starship.toml"
 $ENV:STARSHIP_DISTRO = "  alarwasyi98 "
-$ENV:STARSHIP_CACHE = "$HOME\AppData\Local\Temp"
-Invoke-Expression (&starship init powershell)
 
 # ChocolateyProfile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
@@ -10,11 +20,6 @@ if (Test-Path($ChocolateyProfile)) {
     Import-Module "$ChocolateyProfile"
 }
 
-# Aliases
-Set-Alias tt tree
-# Set-Alias ll ls
-Set-Alias vim nvim
-Set-Alias cat bat
 
 # Linux-Like Function
 
@@ -28,8 +33,7 @@ function admin {
     }
 }
 
-# Set UNIX-like aliases for the admin command, so sudo <command> will run the command with elevated rights.
-Set-Alias -Name su -Value admin
+
 
 function whereis ($command) {
 	Get-Command -Name $command -ErrorAction SilentlyContinue |
@@ -62,42 +66,6 @@ function staredit {
     )
     nvim $FilePath
 }
-
-# Enhanced Listing
-function la { Get-ChildItem -Path . -Force | Format-Table -AutoSize }
-function ln { Get-ChildItem -Name | Format-Table -Autosize}
-
-# Open Windows Utilitie Chris Titus
-function winutil {
-	Invoke-WebRequest -useb https://christitus.com/win | Invoke-Expression
-}
-
-# Git Shortcuts
-function gs { git status }
-function ga { git add . }
-function gc { param($m) git commit -m "$m" }
-function gp { git push }
-function g { z Github }
-function gcl { git clone "$args" }
-function gcom {
-    git add .
-    git commit -m "$args"
-}
-function lazyg {
-    git add .
-    git commit -m "$args"
-    git push
-}
-
-# Modules Importer
-# Terminal-Icons
-Import-Module Terminal-Icons
-
-# PSReadline
-Import-Module PSReadline
-Set-PSReadlineKeyHandler -Key Tab -Function Complete
-Set-PSReadlineOption -PredictionViewStyle ListView
-Set-PsReadlineOption -PredictionSource History
 
 # Invoke Expressions
 Invoke-Expression (&starship init powershell)
