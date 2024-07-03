@@ -57,14 +57,14 @@ To change the `$SHELL` terminal icon that you are currently using, you must chan
 - Open [Windows Terminal](https://github.com/microsoft/terminal) settings
 - Click the `gear` icon in bottom-left
 - add 
-```js
-            {
-                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
-                "hidden": false,
-                // add the following line that refer to the target directory
-                "icon": "C:\\Users\\user\\Icons\\WindowsTerminalIcons\\ubuntumono.png",
-                "name": "Ubuntu",
-                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
-            },
+```json
+{
+    "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+    "hidden": false,
+    // add the following line that refer to the target directory
+    "icon": "C:\\Users\\user\\Icons\\WindowsTerminalIcons\\ubuntumono.png",
+    "name": "Ubuntu",
+    "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+}
 ```
 - Enjoy!
