@@ -1,15 +1,13 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
             "command": "find",
             "keys": "ctrl+shift+f"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -21,8 +19,7 @@
             "keys": "ctrl+v"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
@@ -32,26 +29,21 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "newTabMenu": 
-    [
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "colorScheme": "Catppuccin Mocha",
-            "font": 
-            {
+            "font": {
                 "face": "FiraCode Nerd Font",
-                "size": 11.0
+                "size": 11.0,
                 "weight": "bold"
             }
         },
-        "list": 
-        [
+        "list": [
             {
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
@@ -59,7 +51,7 @@
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore"
             },
-           {
+            {
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
                 "hidden": false,
                 "icon": "%userprofile%\\Icons\\WindowsTerminalIcons\\githubalt1.png",
@@ -73,7 +65,7 @@
                 "icon": "%userprofile%\\Icons\\WindowsTerminalIcons\\cmd_alt2.png",
                 "name": "CMD"
             },
-           {
+            {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": true,
@@ -81,9 +73,8 @@
             }
         ]
     },
-    "schemes": 
-    [
-       {
+    "schemes": [
+        {
             "background": "#1A1A1A",
             "black": "#121212",
             "blue": "#2B4FFF",
@@ -129,55 +120,51 @@
             "white": "#BAC2DE",
             "yellow": "#F9E2AF"
         },
-   ],
+        {
+            "name": "Tokyo Night",
+            "black": "#15161e",
+            "red": "#f7768e",
+            "green": "#9ece6a",
+            "yellow": "#e0af68",
+            "blue": "#7aa2f7",
+            "purple": "#bb9af7",
+            "cyan": "#7dcfff",
+            "white": "#a9b1d6",
+            "brightBlack": "#414868",
+            "brightRed": "#f7768e",
+            "brightGreen": "#9ece6a",
+            "brightYellow": "#e0af68",
+            "brightBlue": "#7aa2f7",
+            "brightPurple": "#bb9af7",
+            "brightCyan": "#7dcfff",
+            "brightWhite": "#c0caf5",
+            "background": "#1a1b26",
+            "foreground": "#c0caf5",
+            "selectionBackground": "#33467c",
+            "cursorColor": "#c0caf5"
+        }
+    ],
     "showTabsInTitlebar": true,
     "themes": [
-       {
+        {
             "name": "Catppuccin Mocha",
-            "tab": 
-            {
+            "tab": {
                 "background": "#1E1E2EFF",
-                "iconStyle": "default",
                 "showCloseButton": "always",
                 "unfocusedBackground": null
             },
-            "tabRow": 
-            {
+            "tabRow": {
                 "background": "#181825FF",
                 "unfocusedBackground": "#11111BFF"
             },
-            "window": 
-            {
+            "window": {
                 "applicationTheme": "dark",
                 "experimental.rainbowFrame": false,
                 "frame": null,
                 "unfocusedFrame": null,
                 "useMica": false
             }
-        },
-        {
-            "background": "#1A1A1A",
-            "black": "#121212",
-            "blue": "#2B4FFF",
-            "brightBlack": "#666666",
-            "brightBlue": "#5C78FF",
-            "brightCyan": "#5AC8FF",
-            "brightGreen": "#905AFF",
-            "brightPurple": "#5EA2FF",
-            "brightRed": "#BA5AFF",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#685AFF",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#28B9FF",
-            "foreground": "#F1F1F1",
-            "green": "#7129FF",
-            "name": "Christian Lempa",
-            "purple": "#2883FF",
-            "red": "#A52AFF",
-            "selectionBackground": "#FFFFFF",
-            "white": "#F1F1F1",
-            "yellow": "#3D2AFF"
         }
-  ],
+    ],
     "useAcrylicInTabRow": false
 }
