@@ -15,6 +15,15 @@ Set-Alias tt tree
 Set-Alias vim nvim
 Set-Alias cat bat
 
+# fzf preview windows grep
+function bfzf {
+    fzf --preview="bat --decorations=always --color=always {}"
+}
+# fzf preview nvim click
+function fzfvim {
+    nvim (fzf --preview="bat --decorations=always --color=always {}")
+}
+
 ##########################
 # Linux-Like Function
 ##########################
