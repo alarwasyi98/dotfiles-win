@@ -121,7 +121,6 @@
             "yellow": "#F9E2AF"
         },
         {
-            "name": "Tokyo Night",
             "black": "#15161e",
             "red": "#f7768e",
             "green": "#9ece6a",
@@ -140,6 +139,7 @@
             "brightWhite": "#c0caf5",
             "background": "#1a1b26",
             "foreground": "#c0caf5",
+            "name": "Tokyo Night",
             "selectionBackground": "#33467c",
             "cursorColor": "#c0caf5"
         }
