@@ -111,7 +111,7 @@ Set-PSReadlineOption -PredictionViewStyle ListView
 Set-PsReadlineOption -PredictionSource History
 
 # PSGallery => PowerShellGet Package Manager Credential
-Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
+# Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
 
 # Invoke Expressions
 Invoke-Expression (&starship init powershell)
