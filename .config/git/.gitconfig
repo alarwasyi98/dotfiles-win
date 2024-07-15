@@ -1,0 +1,15 @@
+[user]
+	name = alarwasyi98
+	email = alarwasyi98@gmail.com
+[core]
+	editor = code --wait
+[init]
+	defaultBranch = main
+[credential]
+	helper = store
+[color]
+	ui = auto
+[default]
+	difftool = default-difftool
+[default "default-difftool"]
+	cmd = code --wait --diff $LOCAL $REMOTE
