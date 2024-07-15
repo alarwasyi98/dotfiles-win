@@ -1,0 +1,178 @@
+{
+  "WPFTweaks": [],
+  "Install": [
+    {
+      "winget": "Telegram.TelegramDesktop",
+      "choco": "telegram"
+    },
+    {
+      "winget": "sharkdp.bat",
+      "choco": "bat"
+    },
+    {
+      "winget": "Microsoft.Edge",
+      "choco": "microsoft-edge"
+    },
+    {
+      "winget": "Mozilla.Firefox",
+      "choco": "firefox"
+    },
+    {
+      "winget": "TGRMNSoftware.BulkRenameUtility",
+      "choco": "bulkrenameutility"
+    },
+    {
+      "winget": "Microsoft.PowerToys",
+      "choco": "powertoys"
+    },
+    {
+      "winget": "Yarn.Yarn",
+      "choco": "yarn"
+    },
+    {
+      "winget": "Microsoft.WindowsTerminal",
+      "choco": "microsoft-windows-terminal"
+    },
+    {
+      "winget": "Microsoft.PowerShell",
+      "choco": "powershell-core"
+    },
+    {
+      "winget": "BurntSushi.ripgrep.MSVC",
+      "choco": "ripgrep"
+    },
+    {
+      "winget": "ajeetdsouza.zoxide",
+      "choco": "zoxide"
+    },
+    {
+      "winget": "Zoom.Zoom",
+      "choco": "zoom"
+    },
+    {
+      "winget": "Google.Drive",
+      "choco": "googledrive"
+    },
+    {
+      "winget": "Obsidian.Obsidian",
+      "choco": "obsidian"
+    },
+    {
+      "winget": "ShareX.ShareX",
+      "choco": "sharex"
+    },
+    {
+      "winget": "nepnep.neofetch-win",
+      "choco": "na"
+    },
+    {
+      "winget": "Neovim.Neovim",
+      "choco": "neovim"
+    },
+    {
+      "winget": "Python.Python.3.12",
+      "choco": "python"
+    },
+    {
+      "winget": "Google.Chrome",
+      "choco": "googlechrome"
+    },
+    {
+      "winget": "RARLab.WinRAR",
+      "choco": "winrar"
+    },
+    {
+      "winget": "Valve.Steam",
+      "choco": "steam-client"
+    },
+    {
+      "winget": "Nilesoft.Shell",
+      "choco": "nilesoft-shell"
+    },
+    {
+      "winget": "Microsoft.OneDrive",
+      "choco": "onedrive"
+    },
+    {
+      "winget": "VideoLAN.VLC",
+      "choco": "vlc"
+    },
+    {
+      "winget": "Discord.Discord",
+      "choco": "discord"
+    },
+    {
+      "winget": "Bitwarden.Bitwarden",
+      "choco": "bitwarden"
+    },
+    {
+      "winget": "Microsoft.VisualStudioCode",
+      "choco": "vscode"
+    },
+    {
+      "winget": "OpenJS.NodeJS.LTS",
+      "choco": "nodejs-lts"
+    },
+    {
+      "winget": "junegunn.fzf",
+      "choco": "fzf"
+    },
+    {
+      "winget": "starship",
+      "choco": "starship"
+    },
+    {
+      "winget": "JesseDuffield.lazygit",
+      "choco": "lazygit"
+    },
+    {
+      "winget": "Schniz.fnm",
+      "choco": "fnm"
+    },
+    {
+      "winget": "Git.Git",
+      "choco": "git"
+    },
+    {
+      "winget": "Klocman.BulkCrapUninstaller",
+      "choco": "bulk-crap-uninstaller"
+    }
+  ],
+  "WPFFeature": [],
+  "WPFInstall": [
+    "WPFInstalltelegram",
+    "WPFInstallbat",
+    "WPFInstalledge",
+    "WPFInstallfirefox",
+    "WPFInstallbulkrenameutility",
+    "WPFInstallpowertoys",
+    "WPFInstallyarn",
+    "WPFInstallterminal",
+    "WPFInstallpowershell",
+    "WPFInstallripgrep",
+    "WPFInstallzoxide",
+    "WPFInstallzoom",
+    "WPFInstallgoogledrive",
+    "WPFInstallobsidian",
+    "WPFInstallsharex",
+    "WPFInstallneofetchwin",
+    "WPFInstallneovim",
+    "WPFInstallpython3",
+    "WPFInstallchrome",
+    "WPFInstallwinrar",
+    "WPFInstallsteam",
+    "WPFInstallnilesoftShel",
+    "WPFInstallonedrive",
+    "WPFInstallvlc",
+    "WPFInstalldiscord",
+    "WPFInstallbitwarden",
+    "WPFInstallvscode",
+    "WPFInstallnodejslts",
+    "WPFInstallfzf",
+    "WPFInstallstarship",
+    "WPFInstalllazygit",
+    "WPFInstallfnm",
+    "WPFInstallgit",
+    "WPFInstallbulkcrapuninstaller"
+  ]
+}
