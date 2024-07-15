@@ -197,6 +197,7 @@ Some of the windows features and services that I turned on
 - [x] Package Manager Conf
 - [x] Basic Softwares Installation
 - [x] Add IDE configuration (neovim & VScode)
+- [ ] Add fonts Installation scripts
 - [ ] Environment Variables Conf
 - [ ] Git integration
 - [ ] Build a `bootstrap.ps1` script for Automation
