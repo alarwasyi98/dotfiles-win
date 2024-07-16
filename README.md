@@ -1,6 +1,13 @@
+![alt text](/src/Images/desktop_2.png)
+
 # Abdul Hakim's Windows Dotfiles
 
-Welcome to my `Windows Dotfiles` repository! This repository contains various configurations that I use whenever I set up a new laptop or PC with Windows. The goal is to simplify the initial setup and save time by using proven and tailored environments.
+![scripting-badge](https://img.shields.io/badge/dotfiles-Windows-blue?style=flat-square)
+![windot](https://img.shields.io/badge/scripting-PowerShell-blue?style=flat-square)
+![level](https://img.shields.io/badge/level-very_beginner-green?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/alarwasyi98/dotfiles-win?style=flat-square)
+
+Welcome to my **Windows Dotfiles** repository! This repository contains various configurations that I use whenever I set up a new laptop or PC with Windows. The goal is to simplify the initial setup and save time by using proven and tailored environments.
 
 > [!NOTE]
 > This repository only contains a collection of basic configurations that I use for daily use. No automation or bootstrapping
@@ -104,7 +111,6 @@ Scoop is another package manager for Windows that focuses on simplicity and ease
 
 1. Open PowerShell.
 2. Ensure that you are in `C:\` directory
-
 3. Run the following command to install Scoop:
 
     ```powershell
@@ -217,6 +223,9 @@ Some of the windows features and services that I turned on
   ```
 
 - Next step is customize the Icons of `$SHELL`. You can find the Icons in `.\src\Icons` in this repo.
+
+  ![Terminal-Shell](/src/Images/terminal-bar.png)
+
 - Make [PowerShell](learn.microsoft.com/powershell) to the top of list.
 
 ### Starship Prompt
@@ -320,7 +329,49 @@ zoxide.exe init powershell # or any shell you have
 
 ### Neovim
 
+Neovim is an IDE that you can run it directly via-terminal for fat-forward coding. But neovim installation in Windows is kinda complicated remembering neovim is configured for UNIX system. Here is how:
+
+- Of course, make sure that [Neovim](github.com/neovim/neovim) is installed
+- Install C Language Compiler. Download [This File](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-posix/seh/x86_64-8.1.0-release-posix-seh-rt_v6-rev0.7z) and extract it to `C:\` directory, then add `C:\minGW64\bin` directory to **Environment Variable**. I Assume that you already know about add something to `$ENV` in Windows.
+- Install following software
+  
+  ``` shell
+  # Install Nerd-Fonts via-Scoop
+  scoop add bucket nerd-fonts
+  scoop install nerd-fonts/FiraCode-NF
+  scoop install nerd-fonts/Hack-NF
+
+  # Install Lazygit
+  winget install --Id JesseDuffield.lazygit
+  ```
+
+- Install [LazyVim](lazyvim.org/installation), you can read the Documentation after run these commands
+
+  ``` powershell
+  # required
+  Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak
+  
+  # optional but recommended
+  Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
+
+  # Clone the Starter Boilerplate
+  git clone https://github.com/LazyVim/starter $env:LOCALAPPDATA\nvim
+
+  # Remove .git directory
+  Remove-Item $env:LOCALAPPDATA\nvim\.git -Recurse -Force
+
+  # Start Neovim
+  nvim
+  ```
+
+- Update all of the Plugins, and add [alpha.lua](.\.config\nvim\lua\plugins\alpha.lua) to you Neovim Configuration folder in `$localappdata\nvim\lua\plugins\`
+- Restart Neovim, and you will have this output after that
+
+  ![neovim-dashboard](/src/Images/neo-dashboard.png)
+
 ### Windows Subsystem for Linux (WSL)
+
+Refer to [Ubuntu-WSL-dotfiles](github.com/alarwasyi98/dotfiles)
 
 ## TODO's
 
@@ -338,7 +389,7 @@ zoxide.exe init powershell # or any shell you have
 ## Contribution
 
 > [!NOTE]
-> I know that this way is for dummies. I'm looking for easier way to manage the configuration such as [GNU Stow](https://www.gnu.org/software/stow/), the dotfiles manager for UNIX System. Tell if any!
+> I knew that this way is very inconvinience. This is my first repo btw. I'm looking for easier way to manage the configuration such as [GNU Stow](https://www.gnu.org/software/stow/), the dotfiles manager for UNIX System. Tell if any!
 
 Contributions are welcome! If you want to add or update configurations, please make a pull request. Make sure you have tested the changes you made before submitting the PR.
 

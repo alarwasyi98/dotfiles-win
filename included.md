@@ -1,5 +1,6 @@
 # Affected Application
 
+Here is the list of applications installed and configured in this repository. All of these applications are applications that I use for personal and professional needs. The goal is to maintain a development environment on my Windows 11 machine. Everyone's needs vary
 ...
 
 ## Included Software
