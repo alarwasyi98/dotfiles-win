@@ -11,7 +11,7 @@ Welcome to my `Windows Dotfiles` repository! This repository contains various co
   - [Table of Contents](#table-of-contents)
   - [Basic Overview](#basic-overview)
   - [Included Configurations](#included-configurations)
-  - [Configuration Procces](#configuration-procces)
+  - [Installation Procces](#installation-procces)
     - [1. Installing Windows Using Answer File](#1-installing-windows-using-answer-file)
     - [2. Softwares Installation](#2-softwares-installation)
     - [3. Chocolatey Installation](#3-chocolatey-installation)
@@ -20,6 +20,12 @@ Welcome to my `Windows Dotfiles` repository! This repository contains various co
     - [6. Installing Additional App](#6-installing-additional-app)
     - [7. yeet! Another Installation](#7-yeet-another-installation)
     - [8. Enabling Windows Features](#8-enabling-windows-features)
+  - [Apps Configuration](#apps-configuration)
+    - [Windows Terminal](#windows-terminal)
+    - [PowerShell 7](#powershell-7)
+    - [Git \& Git Bash](#git--git-bash)
+    - [Zoxide \& fzf](#zoxide--fzf)
+    - [Neovim](#neovim)
   - [TODO's](#todos)
   - [Contribution](#contribution)
   - [License](#license)
@@ -40,7 +46,7 @@ This repository includes configurations for the following applications and tools
 - **WSL (Windows Subsystem for Linux)**
 - **Other relevant applications**
 
-## Configuration Procces
+## Installation Procces
 
 ### 1. Installing Windows Using [Answer File](https://github.com/memstechtips/UnattendedWinstall)
 
@@ -190,6 +196,88 @@ Some of the windows features and services that I turned on
   - Select OK to save your changes
   - Select Yes when prompted to confirm the changes
   - Reboot your computer for the change to take effect.
+
+## Apps Configuration
+
+### Windows Terminal
+
+### PowerShell 7
+
+I have created a profile that collects aliases, functions, and module importers. You can copy the file into the PowerShell profile folder. Here's how.
+
+- Make sure your powershell profile exists in the `~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1` directory. If not, try running this command:
+- Copy [Powershell Profile](./PowerShell/Microsoft.PowerShell_Profile.ps1) and overwrite the existing one by running the command:
+
+  ``` powershell
+  cd dotfiles-win
+
+  Copy-Item -Path .\PowerShell\Microsoft.PowerShell_Profile.ps1 -Destination $HOME\Documents\PowerShell -Recurse -Force
+  ```
+
+- You have the option to copy the `RAW` code only. Customize your needs
+- Some commands to run existing modules in the [Powershell Profile](./PowerShell/Microsoft.PowerShell_Profile.ps1)
+
+  ``` powershell
+  # PowerShellGet Package Manager
+  Install-Module -Name PowerShellGet -AllowCober -Force
+
+  # Trust PSGallery Repo
+  Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted
+
+  # Terminal-Icons Module
+  Install-Module -Name Terminal-Icons
+
+  # Prompt Editor and Completion
+  Install-Module -Name PSReadline
+
+  # Googling via-terminal 
+  Install-Module -Name PSWebSearch -Force
+  ```
+
+### Git & Git Bash
+
+- **Git Basic Configutation**
+
+  ``` bash
+  # User Info
+  git config --global user.name "$user.name"
+  git config --global user.email "$user.email"
+  
+  # Default Editor
+  git config --global core.editor "code --wait"
+  git config --global default.difftool "default-difftool"
+  git config --global default.deafult-difftool.cmd "code --wait --diff \$LOCAL \$REMOTE"
+
+  # Default Branch Name
+  git config --global init.defaultBranch main
+
+  git config --global credential.helper store
+  git config --global color.ui auto
+  git config --list --show-origin
+  ```
+
+- **Setup SSH Key**
+  
+  ``` bash
+  # Generate new SSH Key
+  ssh-keygen -t rsa -b 4096 -C "user@email.com"
+  
+  # Get Public SSH Key for Git Server e.g GutHub
+  cd $HOME\.ssh
+  cat rsa_id.pub # Yank all of passphrase, paste to GitHub SSH & APG Key
+  
+  # Test SSH Connection
+  ssh -T git@github.com
+
+  ```
+
+- **Git Bash Prompt**
+
+  Ensure you have `Git Bash` profile in Windows Terminal
+
+### Zoxide & fzf
+
+### Neovim
 
 ## TODO's
 
