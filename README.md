@@ -2,7 +2,7 @@
 
 Welcome to my `Windows Dotfiles` repository! This repository contains various configurations that I use whenever I set up a new laptop or PC with Windows. The goal is to simplify the initial setup and save time by using proven and tailored environments.
 
-> [!IMPORTANT]
+> [!NOTE]
 > This repository only contains a collection of basic configurations that I use for daily use. No automation or bootstrapping
 
 ## Table of Contents
@@ -21,7 +21,7 @@ Welcome to my `Windows Dotfiles` repository! This repository contains various co
     - [7. yeet! Another Installation](#7-yeet-another-installation)
     - [8. Enabling Windows Features](#8-enabling-windows-features)
   - [Apps Configuration](#apps-configuration)
-    - [Windows Terminal](#windows-terminal)
+    - [Starship Prompt](#starship-prompt)
     - [PowerShell 7](#powershell-7)
     - [Git \& Git Bash](#git--git-bash)
     - [Zoxide \& fzf](#zoxide--fzf)
@@ -50,10 +50,11 @@ This repository includes configurations for the following applications and tools
 
 ### 1. Installing Windows Using [Answer File](https://github.com/memstechtips/UnattendedWinstall)
 
-> [!WARNING]
+> [!CAUTION]
+> Before proceeding with the installation or any major configuration changes, it is highly recommended to create a Restore Point. This allows you to revert your system to a previous state in case anything goes wrong.
 > Make sure you understand the risks and benefits of this file. Do it at your own risk!
 
-When I first configured the `Bootable Disk`, the answer file served to shorten my time in tweaking the windows installation. You can read their [Documentation](https://github.com/memstechtips/UnattendedWinstall/blob/main/README.md) for more details.
+When you first configured the `Bootable Disk`, the answer file served to shorten my time in tweaking the windows installation. You can read their [Documentation](https://github.com/memstechtips/UnattendedWinstall/blob/main/README.md) for more details.
 
 ### 2. Softwares Installation
 
@@ -199,7 +200,22 @@ Some of the windows features and services that I turned on
 
 ## Apps Configuration
 
-### Windows Terminal
+### Starship Prompt
+
+[Starship](starship.rs) is a customizable prompt for any shell! you can customize almost everything that appear in your shell. Let's configure!
+
+- Ensure that [Starship](starship.rs) is installed.
+- Type this command in the end of your profile. `Microsoft.PowerShell_profile.ps1` for PowerShell, `.bashrc`, `.zshrc` for Bash and ZSH.
+
+  ``` powershell
+  # Microsoft.PowerShell_profile.ps1
+  Invoke-Expression (&starship init powershell)
+
+  # .bashrc or zsh
+  eval "$(starship init $shell)"
+  ```
+
+- Copy [starship.toml](.\.config\starship.toml) to your `.config` directory
 
 ### PowerShell 7
 
@@ -273,9 +289,15 @@ I have created a profile that collects aliases, functions, and module importers.
 
 - **Git Bash Prompt**
 
-  Ensure you have `Git Bash` profile in Windows Terminal
+  Ensure you have `Git Bash` profile in Windows Terminal, and configure the [starship setup](#starship-prompt) to customize the prompt.
 
 ### Zoxide & fzf
+
+Zoxide allows you to navigate to the file with fuzzyfinder method. Configure the zoxide by initialize it to PowerShell. Run this command:
+
+``` bash
+zoxide.exe init powershell # or any shell you have
+```
 
 ### Neovim
 
