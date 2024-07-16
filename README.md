@@ -21,6 +21,7 @@ Welcome to my `Windows Dotfiles` repository! This repository contains various co
     - [7. yeet! Another Installation](#7-yeet-another-installation)
     - [8. Enabling Windows Features](#8-enabling-windows-features)
   - [Apps Configuration](#apps-configuration)
+    - [Windows Terminal](#windows-terminal)
     - [Starship Prompt](#starship-prompt)
     - [PowerShell 7](#powershell-7)
     - [Git \& Git Bash](#git--git-bash)
@@ -39,10 +40,11 @@ This repository is a collection of various application configurations I use dail
 This repository includes configurations for the following applications and tools: You can see list of apps that I configure in [Included-Configuration](./README.md)
 
 - **Windows Terminal**
+- **Starship Prompt**
 - **PowerShell 7**
-- **Neovim**
+- **Git & Git Bash**
 - **VSCode**
-- **Git**
+- **Neovim**
 - **WSL (Windows Subsystem for Linux)**
 - **Other relevant applications**
 
@@ -199,6 +201,19 @@ Some of the windows features and services that I turned on
   - Reboot your computer for the change to take effect.
 
 ## Apps Configuration
+
+### Windows Terminal
+
+- Make sure that Windows Terminal is installed, then copy the colorscheme in [win-terminal-setting.json](.\.config\win-terminal.setting.json).
+
+  ``` json
+  "schemes": [
+    # copy colorscheme you like in this section
+  ]
+  ```
+
+- Next step is customize the Icons of `$SHELL`. You can find the Icons in `.\src\Icons` in this repo.
+- Make [PowerShell](learn.microsoft.com/powershell) to the top of list.
 
 ### Starship Prompt
 
