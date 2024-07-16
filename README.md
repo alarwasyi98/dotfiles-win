@@ -27,6 +27,7 @@ Welcome to my `Windows Dotfiles` repository! This repository contains various co
     - [Git \& Git Bash](#git--git-bash)
     - [Zoxide \& fzf](#zoxide--fzf)
     - [Neovim](#neovim)
+    - [Windows Subsystem for Linux (WSL)](#windows-subsystem-for-linux-wsl)
   - [TODO's](#todos)
   - [Contribution](#contribution)
   - [License](#license)
@@ -37,7 +38,7 @@ This repository is a collection of various application configurations I use dail
 
 ## Included Configurations
 
-This repository includes configurations for the following applications and tools: You can see list of apps that I configure in [Included-Configuration](./README.md)
+This repository includes configurations for the following applications and tools: You can see list of apps that I configure in [Included-Configuration](included.md)
 
 - **Windows Terminal**
 - **Starship Prompt**
@@ -118,7 +119,10 @@ Scoop is another package manager for Windows that focuses on simplicity and ease
 
 ### 5. Installing App via Microsoft Store
 
-Because we use the `answer file` during Windows Installation, we don't get Bloatware Applications like in a normal Windows installation. Therefore, we need Microsoft Store to install some essential Apps for regular use. The following apps is some apps that only available in Microsft Store.
+> [!NOTE]
+> If you do not see the Microsoft Store due to Windows installation using [Answer File](#1-installing-windows-using-answer-file), you can download [XBOX Desktop] first, then install the Microsoft Store in the pop-up window.
+
+Because we use the [Answer File](#1-installing-windows-using-answer-file) during Windows Installation, we don't get Bloatware Applications like in a normal Windows installation. Therefore, we need Microsoft Store to install some essential Apps for regular use. The following apps is some apps that only available in Microsft Store.
 
 - [Notepad](https://apps.microsoft.com/detail/9msmlrh6lzf3?hl=en-us&gl=ID)
   - or the alternative [NotepadsApp](https://www.notepadsapp.com/)
@@ -135,7 +139,7 @@ Because we use the `answer file` during Windows Installation, we don't get Bloat
 
 Some additional apps that I didn't get through winutil or Microsoft Store:
 
-- [Nitro PDF Reader](https://www.gonitro.com/)
+- [Nitro PDF Reader](https://www.gonitro.com/)  Powerful PDF Reader
 - [Character Map UWP](https://github.com/character-map-uwp/Character-Map-UWP); A modern, native UWP replacement for the Win32 Character Map
 - [Notion](https://www.notion.so/) ; The all-in-one workspace
 - [Notion-Calendar](https://www.notion.so/product/calendar) ; Notion-designed Calendar
@@ -316,12 +320,16 @@ zoxide.exe init powershell # or any shell you have
 
 ### Neovim
 
+### Windows Subsystem for Linux (WSL)
+
 ## TODO's
 
 - [x] Tweaks troubleshoots
 - [x] Package Manager Conf
 - [x] Basic Softwares Installation
 - [x] Add IDE configuration (neovim & VScode)
+- [ ] Neovim Configuration
+- [ ] WSL Configuration
 - [ ] Add fonts Installation scripts
 - [ ] Environment Variables Conf
 - [ ] Git integration
@@ -336,8 +344,9 @@ Contributions are welcome! If you want to add or update configurations, please m
 
 ## License
 
-This repository is licensed under the [GPL License](LICENSE). Please read the license file for more information.
+This repository is licensed under the [Public Domain License](LICENSE). Please read the license file for more information.
 
 ---
+...
 
-Happy configuring and I hope you find this repository useful!
+Happy configuring and I hope you find this repository useful! ✨
