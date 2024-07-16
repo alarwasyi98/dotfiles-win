@@ -364,7 +364,7 @@ Neovim is an IDE that you can run it directly via-terminal for fat-forward codin
   nvim
   ```
 
-- Update all of the Plugins, and add [alpha.lua](.\.config\nvim\lua\plugins\alpha.lua) to you Neovim Configuration folder in `$localappdata\nvim\lua\plugins\`
+- Update all of the Plugins, and add [alpha.lua](.\.config\nvim\lua\plugins\alpha.lua) to you Neovim Configuration folder in `C:\Users\UserName\AppData\Local\nvim\lua\plugins`
 - Restart Neovim, and you will have this output after that
 
   ![neovim-dashboard](/src/Images/neo-dashboard.png)
