@@ -66,6 +66,9 @@ function pict { Set-Location -Path $HOME\Pictures }
 function dev { Set-Location -Path x:\ }
 
 # Quick Access to Editing the Profile
+function Edit-Profile {
+    vim $PROFILE.CurrentUserAllHosts
+}
 function ep { vim $PROFILE }
 function staredit {
     param (
@@ -76,12 +79,12 @@ function staredit {
 
 # Open Windows Utilitie Chris Titus
 function winutil {
-	Invoke-WebRequest -useb https://christitus.com/win | Invoke-Expression
+    Invoke-WebRequest -useb https://christitus.com/win | Invoke-Expression
 }
 
 # Enhanced Listing
 function la { Get-ChildItem -Path . -Force | Format-Table -AutoSize }
-function ln { Get-ChildItem -Name | Format-Table -Autosize}
+function ln { Get-ChildItem -Name | Format-Table -Autosize }
 
 # Git Shortcuts
 function gs { git status }
