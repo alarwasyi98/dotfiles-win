@@ -5,56 +5,59 @@ Here is the list of applications installed and configured in this repository. Al
 
 ## Included Software
 
-| No | Software                   | Source          |
-|----|----------------------------|-----------------|
-| 1  | Arc (optional)             | Chocolatey      |
-| 2  | Bat                        | Chocolatey      |
-| 3  | beWidget                   | Chocolatey      |
-| 4  | Bitwarden                  | Chocolatey      |
-| 5  | Bulk Crap Uninstaller      | Chocolatey      |
-| 6  | Bulk Rename Utility        | Chocolatey      |
-| 7  | Character Map UWP          | Microsoft Store |
-| 8  | Chrome                     | Chocolatey      |
-| 9  | Composer                   | Chocolatey      |
-| 10 | Discord                    | Chocolatey      |
-| 11 | Edge                       | Pre-installed   |
-| 12 | Fast Node Manager          | Chocolatey      |
-| 13 | Firefox                    | Chocolatey      |
-| 14 | fzf                        | Chocolatey      |
-| 15 | Git                        | Chocolatey      |
-| 16 | Google Drive               | Chocolatey      |
-| 17 | Lazygit                    | Chocolatey      |
-| 18 | Microsoft ToDo             | Microsoft Store |
-| 19 | Neofetch                   | Chocolatey      |
-| 20 | Neovim                     | Scoop           |
-| 21 | Nilesoft.Shell             | Chocolatey      |
-| 22 | Nitro PDF                  | Chocolatey      |
-| 23 | Nodejs LTS                 | Chocolatey      |
-| 24 | Notepads Apps              | Microsoft Store |
-| 25 | Notion.Notion              | Chocolatey      |
-| 26 | Notion.NotionCalendar      | Chocolatey      |
-| 27 | Obsidian                   | Chocolatey      |
-| 28 | Office 365                 | Microsoft Store |
-| 29 | OneDrive                   | Pre-installed   |
-| 30 | PowerShell                 | Pre-installed   |
-| 31 | PowerToys                  | Chocolatey      |
-| 32 | Python3 (optional)         | Chocolatey      |
-| 33 | Ripgrep                    | Chocolatey      |
-| 34 | ShareX                     | Chocolatey      |
-| 35 | Starship                   | Chocolatey      |
-| 36 | Steam                      | Chocolatey      |
-| 37 | Telegram                   | Chocolatey      |
-| 38 | VLC                        | Chocolatey      |
-| 39 | VS Code                    | Chocolatey      |
-| 40 | WhatsApp                   | Chocolatey      |
-| 41 | Windows Notepad            | Pre-installed   |
-| 42 | Windows Photo              | Pre-installed   |
-| 43 | Windows Terminal           | Microsoft Store |
-| 44 | WinRar                     | Chocolatey      |
-| 45 | XAMPP                      | Chocolatey      |
-| 46 | Yarn                       | Chocolatey      |
-| 47 | Zoom                       | Chocolatey      |
-| 48 | Zoxide                     | Chocolatey      |
+> [!NOTE]
+> Don't forget to add `flag` in every single app you want to Install. e.g: `choco install arc -y`
+
+| No | Software                   | Source          | Command                       |
+|----|----------------------------|-----------------|-------------------------------|
+| 1  | Arc (optional)             | Chocolatey      | `choco install arc`           |
+| 2  | Bat                        | Chocolatey      | `choco install bat`           |
+| 3  | beWidget                   | Chocolatey      | `choco install bewidget`      |
+| 4  | Bitwarden                  | Chocolatey      | `choco install bitwarden`     |
+| 5  | Bulk Crap Uninstaller      | Chocolatey      | `choco install bcu`           |
+| 6  | Bulk Rename Utility        | Chocolatey      | `choco install bulkrenameutility` |
+| 7  | Character Map UWP          | Microsoft Store | Install via Microsoft Store   |
+| 8  | Chrome                     | Chocolatey      | `choco install googlechrome`  |
+| 9  | Composer                   | Chocolatey      | `choco install composer`      |
+| 10 | Discord                    | Chocolatey      | `choco install discord`       |
+| 11 | Edge                       | Pre-installed   | N/A                           |
+| 12 | Fast Node Manager          | Chocolatey      | `choco install fnm`           |
+| 13 | Firefox                    | Chocolatey      | `choco install firefox`       |
+| 14 | fzf                        | Chocolatey      | `choco install fzf`           |
+| 15 | Git                        | Chocolatey      | `choco install git`           |
+| 16 | Google Drive               | Chocolatey      | `choco install googledrive`   |
+| 17 | Lazygit                    | Chocolatey      | `choco install lazygit`       |
+| 18 | Microsoft ToDo             | Microsoft Store | Install via Microsoft Store   |
+| 19 | Neofetch                   | Chocolatey      | `choco install neofetch`      |
+| 20 | Neovim                     | Scoop           | `scoop install neovim`        |
+| 21 | Nilesoft.Shell             | Chocolatey      | `choco install nilesoft.shell`|
+| 22 | Nitro PDF                  | Chocolatey      | `choco install nitro-pdf`     |
+| 23 | Nodejs LTS                 | Chocolatey      | `choco install nodejs-lts`    |
+| 24 | Notepads Apps              | Microsoft Store | Install via Microsoft Store   |
+| 25 | Notion.Notion              | Chocolatey      | `choco install notion`        |
+| 26 | Notion.NotionCalendar      | Chocolatey      | `choco install notioncalendar`|
+| 27 | Obsidian                   | Chocolatey      | `choco install obsidian`      |
+| 28 | Office 365                 | Microsoft Store | Install via Microsoft Store   |
+| 29 | OneDrive                   | Pre-installed   | N/A                           |
+| 30 | PowerShell                 | Pre-installed   | N/A                           |
+| 31 | PowerToys                  | Chocolatey      | `choco install powertoys`     |
+| 32 | Python3 (optional)         | Chocolatey      | `choco install python`        |
+| 33 | Ripgrep                    | Chocolatey      | `choco install ripgrep`       |
+| 34 | ShareX                     | Chocolatey      | `choco install sharex`        |
+| 35 | Starship                   | Chocolatey      | `choco install starship`      |
+| 36 | Steam                      | Chocolatey      | `choco install steam`         |
+| 37 | Telegram                   | Chocolatey      | `choco install telegram`      |
+| 38 | VLC                        | Chocolatey      | `choco install vlc`           |
+| 39 | VS Code                    | Chocolatey      | `choco install vscode`        |
+| 40 | WhatsApp                   | Chocolatey      | `choco install whatsapp`      |
+| 41 | Windows Notepad            | Pre-installed   | N/A                           |
+| 42 | Windows Photo              | Pre-installed   | N/A                           |
+| 43 | Windows Terminal           | Microsoft Store | Install via Microsoft Store   |
+| 44 | WinRar                     | Chocolatey      | `choco install winrar`        |
+| 45 | XAMPP                      | Chocolatey      | `choco install xampp`         |
+| 46 | Yarn                       | Chocolatey      | `choco install yarn`          |
+| 47 | Zoom                       | Chocolatey      | `choco install zoom`          |
+| 48 | Zoxide                     | Chocolatey      | `choco install zoxide`        |
 
 ...
 
