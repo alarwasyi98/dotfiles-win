@@ -62,7 +62,7 @@ This repository includes configurations for the following applications and tools
 ### 1. Installing Windows Using [Answer File](https://github.com/memstechtips/UnattendedWinstall)
 
 > [!CAUTION]
-> Before proceeding with the installation or any major configuration changes, it is highly recommended to create a Restore Point. This allows you to revert your system to a previous state in case anything goes wrong.
+> Before proceeding with the installation or any major configuration changes, it is highly recommended to create a Restore Point.
 > Make sure you understand the risks and benefits of this file. Do it at your own risk!
 
 When you first configured the `Bootable Disk`, the answer file served to shorten my time in tweaking the windows installation. You can read their [Documentation](https://github.com/memstechtips/UnattendedWinstall/blob/main/README.md) for more details.
@@ -146,7 +146,7 @@ Because we use the [Answer File](#1-installing-windows-using-answer-file) during
 
 Some additional apps that I didn't get through winutil or Microsoft Store:
 
-- [Nitro PDF Reader](https://www.gonitro.com/)  Powerful PDF Reader
+- [Nitro PDF Reader](https://www.gonitro.com/) ; Powerful PDF Reader
 - [Character Map UWP](https://github.com/character-map-uwp/Character-Map-UWP); A modern, native UWP replacement for the Win32 Character Map
 - [Notion](https://www.notion.so/) ; The all-in-one workspace
 - [Notion-Calendar](https://www.notion.so/product/calendar) ; Notion-designed Calendar
@@ -184,7 +184,7 @@ Some of the windows features and services that I turned on
   - Start Push Notification Service
   - Run regedit `regedit`
   - Go to following location `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer`
-  - Change `DisableNotificationCenter` to 0
+  - Change `DisableNotificationCenter` to `0`
 
 - **Context Menu**
 

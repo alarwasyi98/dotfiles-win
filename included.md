@@ -1,6 +1,6 @@
 # Affected Application
 
-Here is the list of applications installed and configured in this repository. All of these applications are applications that I use for personal and professional needs. The goal is to maintain a development environment on my Windows 11 machine. Everyone's needs vary
+Here is the list of applications installed and configured in this repository. All of these packages are package that I use for personal and professional needs. The goal is to maintain a development environment on my Windows 11 machine.
 ...
 
 ## Included Software
@@ -37,7 +37,7 @@ Here is the list of applications installed and configured in this repository. Al
 | 25 | Notion.Notion              | Chocolatey      | `choco install notion`        |
 | 26 | Notion.NotionCalendar      | Chocolatey      | `choco install notioncalendar`|
 | 27 | Obsidian                   | Chocolatey      | `choco install obsidian`      |
-| 28 | Office 365                 | Microsoft Store | Install via Microsoft Store   |
+| 28 | Office 365                 | Site | [Official Site](office.com)|
 | 29 | OneDrive                   | Pre-installed   | N/A                           |
 | 30 | PowerShell                 | Pre-installed   | N/A                           |
 | 31 | PowerToys                  | Chocolatey      | `choco install powertoys`     |
@@ -61,15 +61,25 @@ Here is the list of applications installed and configured in this repository. Al
 
 ...
 
-## Installing Chocolatey
+## Package Manager
+
+### Installing WinGet
+
+Microsoft's package manager for Windows, WinGet, is installed by default on Windows 11. Or if you didn't see it, you can get the latest stable version by running:
+
+``` powershell
+Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+```
+
+### Installing Chocolatey
 
 Refer to [Chocolatey Installation](README.md\#3-chocolatey-installation)
 
-## Installing Scoop
+### Installing Scoop
 
 Refer to [Scoop Installation](README.md\#4-installing-scoop)
 
-## Installing Microsoft Store
+### Installing Microsoft Store
 
 Refer to [MS Store Installation](README.md\#5-installing-app-via-microsoft-store)
 
