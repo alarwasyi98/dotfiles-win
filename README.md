@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
-![alt text](/src/Images/desktop_2.png)
+![alt text](/assets/Images/desktop_2.png)
 
 # Abdul Hakim's Windows Dotfiles
 
