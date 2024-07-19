@@ -320,6 +320,15 @@ I have created a profile that collects aliases, functions, and module importers.
 
   Ensure you have `Git Bash` profile in Windows Terminal, and configure the [starship setup](#starship-prompt) to customize the prompt.
 
+  > [!NOTE]
+  > If you don't see the git profile in your Windows Terminal, do the following instruction:
+
+  - Open your [Windows Terminal](https://github.com/microsoft/terminal) application.
+  - Click on the drop-down arrow next to the tabs and select "Settings" from the menu.
+  - Click `+ Add New Profile` then `+ New Empty Profile`.
+  - Give it a name and add this to Command Line section: `C:\Program Files\Git\bin\bash.exe -l -i`
+  - You are all set
+
 ### Zoxide & fzf
 
 Zoxide allows you to navigate to the file with fuzzyfinder method. Configure the zoxide by initialize it to PowerShell. Run this command:
