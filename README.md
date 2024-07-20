@@ -19,6 +19,7 @@ Welcome to my **Windows Dotfiles** repository! This repository contains various 
   - [Table of Contents](#table-of-contents)
   - [Basic Overview](#basic-overview)
   - [Included Configurations](#included-configurations)
+  - [Installation](#installation)
   - [Installation Procces](#installation-procces)
     - [1. Installing Windows Using Answer File](#1-installing-windows-using-answer-file)
     - [2. Softwares Installation](#2-softwares-installation)
@@ -56,6 +57,11 @@ This repository includes configurations for the following applications and tools
 - **Neovim**
 - **WSL (Windows Subsystem for Linux)**
 - **Other relevant applications**
+
+## Installation
+
+- Git installed? If yes, execute in a terminal window: `cd ~; git clone https://github.com/fleschutz/my-settings`
+- Otherwise, download and extract this repository into the home folder (see green button above).
 
 ## Installation Procces
 
@@ -223,9 +229,9 @@ Some of the windows features and services that I turned on
   ]
   ```
 
-- Next step is customize the Icons of `$SHELL`. You can find the Icons in `.\src\Icons` in this repo.
+- Next step is customize the Icons of `$SHELL`. You can find the Icons in `.\assets\Icons` in this repo.
 
-  ![Terminal-Shell](/src/Images/terminal-bar.png)
+  ![Terminal-Shell](/assets/Images/terminal-bar.png)
 
 - Make [PowerShell](learn.microsoft.com/powershell) to the top of list.
 
@@ -377,7 +383,7 @@ Neovim is an IDE that you can run it directly via-terminal for fat-forward codin
 - Update all of the Plugins, and add [alpha.lua](.\.config\nvim\lua\plugins\alpha.lua) to you Neovim Configuration folder in `C:\Users\UserName\AppData\Local\nvim\lua\plugins`
 - Restart Neovim, and you will have this output after that
 
-  ![neovim-dashboard](/src/Images/neo-dashboard.png)
+  ![neovim-dashboard](/assets/Images/neo-dashboard.png)
 
 ### Windows Subsystem for Linux (WSL)
 
