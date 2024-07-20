@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
-![alt text](/assets/Images/desktop_2.png)
+![alt text](/Assets/Images/desktop_2.png)
 
 # Abdul Hakim's Windows Dotfiles
 
@@ -229,9 +229,9 @@ Some of the windows features and services that I turned on
   ]
   ```
 
-- Next step is customize the Icons of `$SHELL`. You can find the Icons in `.\assets\Icons` in this repo.
+- Next step is customize the Icons of `$SHELL`. You can find the Icons in `.\Assets\Icons` in this repo.
 
-  ![Terminal-Shell](/assets/Images/terminal-bar.png)
+  ![Terminal-Shell](/Assets/Images/terminal-bar.png)
 
 - Make [PowerShell](learn.microsoft.com/powershell) to the top of list.
 
@@ -275,6 +275,9 @@ I have created a profile that collects aliases, functions, and module importers.
   # Trust PSGallery Repo
   Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted
 
+  # WinGet Client for PowerToys Util
+  Install-Module -Name Microsoft.WinGet.Client -RequiredVersion 0.2.1
+  
   # Terminal-Icons Module
   Install-Module -Name Terminal-Icons
 
@@ -383,7 +386,7 @@ Neovim is an IDE that you can run it directly via-terminal for fat-forward codin
 - Update all of the Plugins, and add [alpha.lua](.\.config\nvim\lua\plugins\alpha.lua) to you Neovim Configuration folder in `C:\Users\UserName\AppData\Local\nvim\lua\plugins`
 - Restart Neovim, and you will have this output after that
 
-  ![neovim-dashboard](/assets/Images/neo-dashboard.png)
+  ![neovim-dashboard](/Assets/Images/neo-dashboard.png)
 
 ### Windows Subsystem for Linux (WSL)
 
