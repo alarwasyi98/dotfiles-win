@@ -1,0 +1,1 @@
+Invoke-RestMethod christitus.com/win | Invoke-Expression
