@@ -157,6 +157,9 @@ Some additional apps that I didn't get through winutil or Microsoft Store:
 - [Notion](https://www.notion.so/) ; The all-in-one workspace
 - [Notion-Calendar](https://www.notion.so/product/calendar) ; Notion-designed Calendar
 - [Cloudflare-WARP](https://one.one.one.one) ; VPN-like service, but not
+- [Pasteboard](https://www.pasteboard.app/); Windows Clipboard manager
+- [Raindrop IO](https://www.raindrop.io/); Bookmark manager with Awesome UI
+- [Nanazip](https://apps.microsoft.com/detail/9n8g7tscl18r?rtc=1&hl=en-id&gl=ID); ZIP Archiver Alternatives
 
     ``` powershell
     # install Nitro PDF
@@ -173,6 +176,15 @@ Some additional apps that I didn't get through winutil or Microsoft Store:
 
     # install WARP
     winget install --id Cloudflare.Warp
+
+    # Install Pasteboard
+    winget install --Id 9P3Q21SL03RL
+
+    # Install Raindrop
+    winget install --Id RustemMussabekov.Raindrop
+
+    # Install Nanazip
+    winget install --Id Nanazip
     ```
 
 ### 7. yeet! Another Installation
