@@ -24,9 +24,9 @@ function fzfvim {
     nvim (fzf --preview="bat --decorations=always --color=always {}")
 }
 
-##########################
-# Linux-Like Function
-##########################
+#############################
+# --- Linux-Like Function ---
+#############################
 
 # System Utilities
 function admin {
@@ -47,7 +47,63 @@ function whereis ($command) {
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
 
-function touch($file) { "" | Out-File $file -Encoding ASCII }
+# Print Command Location
+function which {
+    param (
+        [Parameter(Mandatory = $true, Position = 0)]
+        [string]$command
+    )
+
+    $result = Get-Command $command -ErrorAction SilentlyContinue
+
+    if ($result) {
+        $result.Source
+    }
+    else {
+        Write-Host "${command} not found"
+    }
+}
+
+# Make new item
+# parameters: -encoding, -d for directory
+function touch {
+    param (
+        [Parameter(Mandatory = $true, Position = 0)]
+        [string]$path,
+        
+        [Parameter(Mandatory = $false)]
+        [switch]$d,
+
+        [Parameter(Mandatory = $false)]
+        [ValidateSet("utf8", "utf8BOM", "ascii", "unicode")]
+        [string]$encoding = "utf8"
+    )
+
+    if ($d) {
+        # Membuat direktori
+        if (!(Test-Path -Path $path)) {
+            New-Item -ItemType Directory -Path $path -Force
+        }
+        else {
+            Write-Host "Directory already exists: $path"
+        }
+    }
+    else {
+        # Membuat atau memperbarui file
+        if (Test-Path -Path $path) {
+            (Get-Item $path).LastWriteTime = Get-Date
+        }
+        else {
+            $encodingObj = switch ($encoding) {
+                "utf8" { [System.Text.Encoding]::UTF8 }
+                "utf8BOM" { New-Object System.Text.UTF8Encoding $true }
+                "ascii" { [System.Text.Encoding]::ASCII }
+                "unicode" { [System.Text.Encoding]::Unicode }
+            }
+            [System.IO.File]::WriteAllText($path, "", $encodingObj)
+        }
+    }
+}
 function ff($name) {
     Get-ChildItem -recurse -filter "*${name}*" -ErrorAction SilentlyContinue | ForEach-Object {
         Write-Output "$($_.FullName)"
@@ -103,19 +159,21 @@ function lazyg {
     git push
 }
 
-# Modules Importer
+#############################
+# --- Modules Importer ---
+#############################
+
 # Terminal-Icons
 Import-Module Terminal-Icons
 
 # PSReadline
 Import-Module PSReadline
+Set-PSReadLineOption -BellStyle None
 Set-PSReadlineKeyHandler -Key Tab -Function Complete
 Set-PSReadlineOption -PredictionViewStyle ListView
 Set-PsReadlineOption -PredictionSource History
 
-# PSGallery => PowerShellGet Package Manager Credential
-# Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
-
-# Invoke Expressions
+# starship prompt 'winget install starship'
 Invoke-Expression (&starship init powershell)
+# zoxide autojump 'winget install zoxide'
 Invoke-Expression (& { (zoxide init powershell | Out-String) }) # Must in the end
