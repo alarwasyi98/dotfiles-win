@@ -1,0 +1,35 @@
+[user]
+	name = alarwasyi98
+	email = alarwasyi98@gmail.com
+[core]
+	editor = code --wait
+	autocrlf = false
+	symlinks = true
+	longpaths = true
+[init]
+	defaultBranch = main
+[credential]
+	helper = store
+[color]
+	ui = auto
+[default]
+	difftool = default-difftool
+[default "default-difftool"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+	renamelimit = 99999
+[pull]
+	rebase = false
+[fetch]
+	parallel = 0
+[alias]
+	br = branch
+	chp = cherry-pick --no-commit
+	ci = commit
+	co = checkout
+	ls = log -n20 --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)by %an%Creset %C(green)%cr%Creset' --abbrev-commit
+	mrg = merge --no-commit --no-ff
+	pl = pull --recurse-submodules
+	ps = push
+	smu = submodule update --init
+	st = status
