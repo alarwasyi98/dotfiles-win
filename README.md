@@ -262,7 +262,7 @@ Some of the windows features and services that I turned on
   eval "$(starship init $shell)"
   ```
 
-- Copy [starship.toml](.\.config\starship.toml) to your `.config` directory
+- Copy [starship.toml](./Starship/starship.toml) to your `.config` directory
 
 ### PowerShell 7
 
@@ -313,13 +313,30 @@ I have created a profile that collects aliases, functions, and module importers.
   git config --global core.editor "code --wait"
   git config --global default.difftool "default-difftool"
   git config --global default.deafult-difftool.cmd "code --wait --diff \$LOCAL \$REMOTE"
-
-  # Default Branch Name
+  
+  # Set Other Setting
   git config --global init.defaultBranch main
-
+  git config --global core.autocrlf false
+  git config --global core.symlink true
+  git config --global core.longpath true
+  git config --global merge.renamelimit 99999
+  git config --global pull.rebase false
+  git config --global fetch.parallel 0
   git config --global credential.helper store
   git config --global color.ui auto
   git config --list --show-origin
+  
+  # Git Custom aliases
+  git config --global alias.br "branch"
+  git config --global alias.chp "cherry-pick --no-commit"
+  git config --global alias.ci "commit"
+  git config --global alias.co "checkout"
+  git config --global alias.ls "log -n20 --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)by %an%Creset %C(green)%cr%Creset' --abbrev-commit"
+  git config --global alias.mrg "merge --no-commit --no-ff"
+  git config --global alias.pl "pull --recurse-submodules"
+  git config --global alias.ps "push"
+  git config --global alias.smu "submodule update --init"
+  git config --global alias.st "status"
   ```
 
 - **Setup SSH Key**
