@@ -8,10 +8,14 @@
 ![level](https://img.shields.io/badge/level-very_beginner-green?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/alarwasyi98/dotfiles-win?style=flat-square)
 
+> [!CAUTION]
+> **Temporarily Unmaintained Repo**. Some settings is migrated to [PowerShell Profile](https://github.com/alarwasyi98/PowerShell)
+
 Welcome to my **Windows Dotfiles** repository! This repository contains various configurations that I use whenever I set up a new laptop or PC with Windows. The goal is to simplify the initial setup and save time by using proven and tailored environments.
 
 > [!NOTE]
-> This repository only contains a collection of basic configurations that I use for daily use. No automation or bootstrapping
+> This repository only contains a collection of basic configurations that I use for daily use. People's needs may vary.
+> Always review untrusted source!
 
 ## Table of Contents
 
