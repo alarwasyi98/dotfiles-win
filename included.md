@@ -23,7 +23,7 @@ Here is the list of applications installed and configured in this repository. Al
 | 1  | Git             | Chocolatey  | `choco install git`             |
 | 2  | Nodejs LTS      | Chocolatey  | `choco install nodejs-lts`      |
 | 3  | Yarn            | Chocolatey  | `choco install yarn`            |
-| 4  | Python3 (optional) | Chocolatey  | `choco install python`      |
+| 4  | Python3         | Chocolatey  | `choco install python`          |
 | 5  | Composer        | Chocolatey  | `choco install composer`        |
 | 6  | VS Code         | Chocolatey  | `choco install vscode`          |
 | 7  | Neovim          | Scoop       | `scoop install neovim`          |
@@ -32,6 +32,7 @@ Here is the list of applications installed and configured in this repository. Al
 | 10 | Ripgrep         | Chocolatey  | `choco install ripgrep`         |
 | 11 | Fast Node Manager | Chocolatey | `choco install fnm`            |
 | 12 | Bat              | Chocolatey | `choco install bat`             |
+| 13 | Delta            | Chocolatey | `choco install delta`           |
 
 ## Utilities
 
@@ -55,7 +56,7 @@ Here is the list of applications installed and configured in this repository. Al
 | 16 | WinRar                     | Chocolatey      | `choco install winrar`           |
 | 17 | XAMPP                      | Chocolatey      | `choco install xampp`            |
 | 18 | Zoxide                     | Chocolatey      | `choco install zoxide`           |
-| 19 | Pasteboard                     | Chocolatey      | Install via Microsoft Store      |
+| 19 | Pastebar                     | Chocolatey      | `choco instal pastebar`      |
 
 ## Social & Communication
 

@@ -1,1 +1,1 @@
-Invoke-RestMethod christitus.com/win | Invoke-Expression
+Invoke-RestMethod "https://christitus.com/win" | Invoke-Expression
