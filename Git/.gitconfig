@@ -1,8 +1,9 @@
 [user]
-	name = alarwasyi98
+	name = Abdul Hakim
 	email = alarwasyi98@gmail.com
 [core]
-	editor = code --wait
+  editor = code
+  pager = delta
 	autocrlf = false
 	symlinks = true
 	longpaths = true
@@ -17,9 +18,10 @@
 [default "default-difftool"]
 	cmd = code --wait --diff $LOCAL $REMOTE
 [merge]
-	renamelimit = 99999
+  renamelimit = 99999
+  conflictstyle = zdiff3
 [pull]
-	rebase = false
+	rebase = true
 [fetch]
 	parallel = 0
 [alias]
@@ -32,4 +34,12 @@
 	pl = pull --recurse-submodules
 	ps = push
 	smu = submodule update --init
-	st = status
+  st = status
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true # use n and N to move between diff sections
+
+    # delta detects terminal colors automatically; set one of these to disable auto-detection
+    # dark = true
+    # light = true
