@@ -1,0 +1,36 @@
+# Ignore plugin directories for Neovim
+# nvim/.config/nvim/lazy-lock.json
+**/lazy-lock.json
+nvim/.netrwhist
+lazy-lock.json
+
+# Ignore compiled Lua files
+*.luac
+
+# Ignore Neovim's undo and swap files
+nvim/undo/
+nvim/swap/
+
+# Ignore package manager directories
+nvim/pack/
+
+# Ignore log files
+*.log
+
+# Ignore cache directories
+.cache/
+*cache/
+
+# Ignore temporary files
+*.tmp
+*.temp
+*~
+
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
