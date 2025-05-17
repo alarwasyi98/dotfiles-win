@@ -3,7 +3,7 @@
 	email = alarwasyi98@gmail.com
 [core]
   editor = code
-  pager = delta
+  pager = delta # require delta-git
 	autocrlf = false
 	symlinks = true
 	longpaths = true
@@ -35,6 +35,7 @@
 	ps = push
 	smu = submodule update --init
   st = status
+# require delta-git
 [interactive]
   diffFilter = delta --color-only
 [delta]
