@@ -1,9 +1,0 @@
-Name          Version Source     Updated             Info
-----          ------- ------     -------             ----
-ani-cli       4.9     extras     2024-11-11 00:59:08 
-dark          3.14    main       2024-10-22 02:10:25 
-ffmpeg-shared 7.1.1   main       2025-03-21 04:30:48 
-FiraCode-NF   3.3.0   nerd-fonts 2025-03-21 04:31:12 
-Hack-NF       3.3.0   nerd-fonts 2025-03-21 04:31:25 
-python        3.13.2  main       2025-03-21 04:36:06 
-scoop-search  2.0.0   main       2025-03-21 00:34:19

@@ -1,0 +1,77 @@
+Windows Registry Editor Version 5.00
+
+; =============================================
+; File Explorer & UI Tweaks
+; =============================================
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Hidden"=dword:00000001               ; Show hidden files
+"HideFileExt"=dword:00000000          ; Show file extensions
+"LaunchTo"=dword:00000001             ; Open File Explorer to "This PC" (1) instead of "Quick Access" (2)
+"TaskbarSmallIcons"=dword:00000001    ; Small taskbar icons
+"DisableThumbnailCache"=dword:00000001 ; Disable thumbnail cache (better for design file-heavy workflows)
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"MenuShowDelay"="100"                 ; Faster menu animations (default: 400ms)
+
+; =============================================
+; Dark Mode & Appearance
+; =============================================
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
+"AppsUseLightTheme"=dword:00000000    ; Dark mode for apps
+"SystemUsesLightTheme"=dword:00000000 ; Dark mode for system UI
+
+; =============================================
+; Developer Context Menu Additions
+; =============================================
+; Open Folder in VS Code
+[HKEY_CLASSES_ROOT\Directory\shell\VSCode]
+@="Open with VS Code"
+"Icon"="C:\\Program Files\\Microsoft VS Code\\Code.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\VSCode\command]
+@="\"C:\\Program Files\\Microsoft VS Code\\Code.exe\" \"%V\""
+
+; Open Folder in WezTerm
+[HKEY_CLASSES_ROOT\Directory\shell\WezTerm]
+@="Open in WezTerm"
+"Icon"="C:\\Program Files\\WezTerm\\wezterm-gui.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\WezTerm\command]
+@="\"C:\\Program Files\\WezTerm\\wezterm-gui.exe\" start --cwd \"%V\""
+
+; =============================================
+; Performance Tweaks
+; =============================================
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"LongPathsEnabled"=dword:00000001     ; Enable long path support (>260 chars)
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System]
+"DisableTaskMgr"=dword:00000000       ; Ensure Task Manager is enabled
+
+; =============================================
+; WSL & Terminal Optimizations
+; =============================================
+[HKEY_CURRENT_USER\Console]
+"ForceV2"=dword:00000001              ; Enable modern console
+"CtrlKeyShortcutsDisabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Console\%%Startup]
+"FaceName"="Cascadia Mono"            ; Default font for legacy console
+
+; =============================================
+; Design Tool Tweaks
+; =============================================
+[HKEY_CURRENT_USER\Software\Adobe]
+"EnableGPU"=dword:00000001            ; Force GPU acceleration in Adobe apps
+
+[HKEY_CURRENT_USER\Software\Figma]
+"DisableGPU"=dword:00000000           ; Enable Figma GPU acceleration
+
+; =============================================
+; Privacy Tweaks (Optional)
+; =============================================
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_TrackProgs"=dword:00000000     ; Disable "Recently used" in Start Menu
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"BingSearchEnabled"=dword:00000000    ; Disable web search in Start Menu
