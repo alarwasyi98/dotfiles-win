@@ -5,9 +5,7 @@
 │  
 ├── 📁 configs/                 # Main configurations  
 │   ├── 📁 registry/            # .reg files for settings  
-│   │   ├── 📄 explorer-tweaks.reg  
-│   │   ├── 📄 dark-mode.reg  
-│   │   └── 📄 privacy.reg  
+│   │   ├── 📄 config.reg  
 │   │  
 │   ├── 📁 powershell/          # PS Profile configurations  
 │   │   ├── 📄 Microsoft.Powershell_Profile.ps1
@@ -30,7 +28,7 @@
 │   └── 📄 env-vars.ps1         # PS script to set variables  
 │  
 ├── 📁 terminal/                # Terminal setups  
-│   ├── 📄 windows-terminal.json # WT settings  
+│   ├── 📄 setting.json         # WT settings  
 │   └── 📄 profile.ps1          # PowerShell $PROFILE  
 │  
 └── 📁 docs/                    # Documentation  
