@@ -1,3 +1,10 @@
+--        .__
+-- _____  |  |     WEZTERM SETUP
+-- \__  \ |  |     Abdul Hakim (alarwasyi98)
+--  / __ \|  |__   https://github.com/alarwasyi98/
+-- (____  /____/
+--      \/
+
 -- WezTerm Configuration
 local wezterm = require("wezterm")
 
@@ -10,12 +17,12 @@ if wezterm.config_builder then
 end
 -- Change Default Program on Startup
 config.default_prog = { "pwsh.exe", "-NoLogo" } -- Use PowerShell as default shell
-config.initial_cols = 125 -- Set initial width to 125 columns
-config.initial_rows = 30 -- Set initial height to 30 rows
+config.initial_cols = 125                       -- Set initial width to 125 columns
+config.initial_rows = 30                        -- Set initial height to 30 rows
 -- Window Appearance Configuration
-config.window_background_opacity = 0.5 -- Background transparency
-config.win32_system_backdrop = "Acrylic" -- Windows blur effect
-config.color_scheme = "Dracula" -- See the full list https://wezterm.org/colorschemes/index.html
+config.window_background_opacity = 0.5          -- Background transparency
+config.win32_system_backdrop = "Acrylic"        -- Windows blur effect
+config.color_scheme = "Dracula"                 -- See the full list https://wezterm.org/colorschemes/index.html
 -- Font Configuration
 config.font = wezterm.font("FiraCode Nerd Font", { weight = "Bold", italic = false })
 config.font_size = 10.0
