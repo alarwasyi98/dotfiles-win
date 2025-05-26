@@ -1,5 +1,6 @@
 <!-- markdownlint-disable MD041 -->
-![alt text](/Assets/Images/desktop_3.png)
+<!-- ![alt text](/Assets/Images/desktop_3.png) -->
+![alt text](/Assets/Images/gruvbox-terminal.png)
 
 # Abdul Hakim's Windows Dotfiles
 
@@ -10,8 +11,10 @@
 
 > [!NOTE]
 > Refer to [Wiki](https://github.com/alarwasyi98/dotfiles-win/wiki).
-> Always review the codes pal!
+> Always inspect the codes pal!
 
-Welcome to my **Windows Dotfiles** repository! This repository contains various configurations that I use whenever I set up a new laptop or PC with Windows. The goal is to simplify the initial setup and save time by using proven and tailored environments.
+**Welcome to my Windows Dotfiles Repository**
+
+This repository contains my personal configuration files and setup scripts for Windows. It's designed to streamline the process of setting up a new laptop or PC by automating the installation of tools, preferences, and system tweaks I rely on. Whether you're setting up a fresh environment or just want to keep things consistent across machines, these dotfiles help ensure a fast, repeatable, and reliable setup
 
 Happy configuring and I hope you find this repository useful! ✨
