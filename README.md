@@ -15,6 +15,6 @@
 
 **Welcome to my Windows Dotfiles Repository**
 
-This repository contains my personal configuration files and setup scripts for Windows. It's designed to streamline the process of setting up a new laptop or PC by automating the installation of tools, preferences, and system tweaks I rely on. Whether you're setting up a fresh environment or just want to keep things consistent across machines, these dotfiles help ensure a fast, repeatable, and reliable setup
+This repository contains my personal configuration files and setup scripts for Windows. Whether you're setting up a fresh environment or just want to keep things consistent across machines, these dotfiles help ensure a repeatable, and reliable setup
 
 Happy configuring and I hope you find this repository useful! ✨
