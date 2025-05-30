@@ -1,6 +1,6 @@
 [user]
-	name = Abdul Hakim
-	email = alarwasyi98@gmail.com
+	name = alarwasyi98
+	email = 88342618+alarwasyi98@users.noreply.github.com
 [core]
   editor = code
   pager = delta # require delta-git
@@ -39,6 +39,9 @@
 [interactive]
   diffFilter = delta --color-only
 [delta]
+  syntax-theme = gruvbox-dark
+  line-numbers = true
+  side-by-side = true
   navigate = true # use n and N to move between diff sections
 
     # delta detects terminal colors automatically; set one of these to disable auto-detection
