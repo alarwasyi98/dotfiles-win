@@ -88,7 +88,6 @@ Function fzfvim {
 }
 
 ### SPECIAL FUNCTIONS ###
-
 # Reload PowerShell Profiles for All Users
 Function Update-Profile {
     # Memuat ulang profil PowerShell
@@ -130,6 +129,28 @@ Function which {
     }
 }
 
+# Auto-start ssh-agent if not running
+if (-not (Get-Process ssh-agent -ErrorAction SilentlyContinue)) {
+    Start-Service ssh-agent
+}
+
+# Function for easy SSH config editing
+function Edit-SSHConfig {
+    nvim ~\.ssh\config
+}
+Set-Alias sshconfig Edit-SSHConfig
+
+# yazi shell wrapper and aliasing 
+function y {
+    $tmp = [System.IO.Path]::GetTempFileName()
+    yazi $args --cwd-file="$tmp"
+    $cwd = Get-Content -Path $tmp -Encoding UTF8
+    if (-not [String]::IsNullOrEmpty($cwd) -and $cwd -ne $PWD.Path) {
+        Set-Location -LiteralPath ([System.IO.Path]::GetFullPath($cwd))
+    }
+    Remove-Item -Path $tmp
+}
+
 # Run as Administrator
 Function admin {
     if ($args.Count -gt 0) {
@@ -142,7 +163,6 @@ Function admin {
 }
 
 ### MODULES IMPORTER ###
-
 # Terminal-Icons
 Import-Module Terminal-Icons
 
@@ -155,7 +175,6 @@ Set-PsReadlineOption -PredictionSource History
 Import-Module -Name Microsoft.WinGet.CommandNotFound
 
 ### INVOCATIONS ###
-
 # colorscripts
 Show-ColorScript -Name alpha
 
