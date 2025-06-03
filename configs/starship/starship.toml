@@ -8,12 +8,15 @@
 # Location:
 # ~/.config/starship.toml
 
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
 # Inserts a blank line between shell prompts
 add_newline = true
 
 # Change the default prompt format
 format = """\
-[╭╴](238)$env_var\
+[╭╴](238)$os$shell$username\
 $all[╰─](238)$character"""
 
 # Change the default prompt characters
@@ -21,19 +24,24 @@ $all[╰─](238)$character"""
 error_symbol = "[](238)"
 success_symbol = "[](238)"
 
-# Shows an icon that should be included by zshrc script based on the distribution or os
-[env_var.STARSHIP_DISTRO]
-disabled = false 
-format = '[$env_value](bold white)' # removed space between distro and rest for pwsh
-variable = "STARSHIP_DISTRO" 
+[os]
+format = '[$symbol](bold white) '
+disabled = false
+
+[os.symbols]
+Windows = ''
+Arch = '󰣇'
+Ubuntu = ''
+Macos = '󰀵'
+EndeavourOS = ' '
 
 # Shows the username
 [username]
-disabled = true # disable in powershell
-format = "[$user]($style) " 
-show_always = false 
-style_root = "black bold" 
-style_user = "green bold" 
+disabled = false            # disable in powershell
+format = "[$user]($style) "
+show_always = true
+style_root = "black bold"
+style_user = "green bold"
 
 [shell]
 format = ' with [$indicator]($style) | '
@@ -41,11 +49,12 @@ bash_indicator = ' bash'
 zsh_indicator = ' zsh'
 fish_indicator = ' fish'
 pwsh_indicator = '󰨊 pwsh'
+nu_indicator = ' nushell'
 style = 'purple bold'
 disabled = false
 
 [directory]
-format = " at [$path]($style)[$read_only]($read_only_style) "
+format = "at [$path]($style)[$read_only]($read_only_style) "
 home_symbol = "  ~"
 read_only = "  "
 read_only_style = "197"
