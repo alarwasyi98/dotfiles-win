@@ -99,8 +99,9 @@ format = "via [ $context](bold blue) "
 format = "via [  $version](bold purple) "
 
 [python]
+format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 python_binary = "python3"
-symbol = "via [ $version]"
+symbol = " "
 
 [nodejs]
 disabled = true
