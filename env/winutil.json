@@ -1,0 +1,260 @@
+{
+  "WPFInstall": [
+    "WPFInstallonedrive",
+    "WPFInstalledge",
+    "WPFInstallzoom",
+    "WPFInstallstarship",
+    "WPFInstallvscode",
+    "WPFInstallteams",
+    "WPFInstallgoogledrive",
+    "WPFInstalllazygit",
+    "WPFInstallfzf",
+    "WPFInstalltelegram",
+    "WPFInstallgolang",
+    "WPFInstallinkscape",
+    "WPFInstalldockerdesktop",
+    "WPFInstallchrome",
+    "WPFInstallfirefox",
+    "WPFInstalllightshot",
+    "WPFInstallneovim",
+    "WPFInstallspotify",
+    "WPFInstallpowertoys",
+    "WPFInstallfnm",
+    "WPFInstall7zip",
+    "WPFInstallpowershell",
+    "WPFInstallnuget",
+    "WPFInstallesearch",
+    "WPFInstallnilesoftShell",
+    "WPFInstallneofetchwin",
+    "WPFInstalldiscord",
+    "WPFInstallbitwarden",
+    "WPFInstallbat",
+    "WPFInstallzoxide",
+    "WPFInstallZenBrowser",
+    "WPFInstallwezterm",
+    "WPFInstallripgrep",
+    "WPFInstallgit",
+    "WPFInstallobsidian",
+    "WPFInstallbulkrenameutility",
+    "WPFInstallbulkcrapuninstaller",
+    "WPFInstallyarn",
+    "WPFInstallnushell",
+    "WPFInstallOVirtualBox",
+    "WPFInstallfiles",
+    "WPFInstallffmpeg",
+    "WPFInstallaimp",
+    "WPFInstallvlc",
+    "WPFInstallterminal",
+    "WPFInstallpython3",
+    "WPFInstallnodejslts",
+    "WPFInstallvivaldi",
+    "WPFInstallnvm",
+    "WPFInstallwinrar"
+  ],
+  "WPFFeature": [],
+  "WPFTweaks": [
+    "WPFTweaksDisableCrossDeviceResume"
+  ],
+  "Install": [
+    {
+      "winget": "Microsoft.OneDrive",
+      "choco": "onedrive"
+    },
+    {
+      "winget": "Microsoft.Edge",
+      "choco": "microsoft-edge"
+    },
+    {
+      "winget": "Zoom.Zoom",
+      "choco": "zoom"
+    },
+    {
+      "winget": "starship",
+      "choco": "starship"
+    },
+    {
+      "winget": "Microsoft.VisualStudioCode",
+      "choco": "vscode"
+    },
+    {
+      "winget": "Microsoft.Teams",
+      "choco": "microsoft-teams"
+    },
+    {
+      "winget": "Google.GoogleDrive",
+      "choco": "googledrive"
+    },
+    {
+      "winget": "JesseDuffield.lazygit",
+      "choco": "lazygit"
+    },
+    {
+      "winget": "junegunn.fzf",
+      "choco": "fzf"
+    },
+    {
+      "winget": "Telegram.TelegramDesktop",
+      "choco": "telegram"
+    },
+    {
+      "winget": "GoLang.Go",
+      "choco": "golang"
+    },
+    {
+      "winget": "Inkscape.Inkscape",
+      "choco": "inkscape"
+    },
+    {
+      "winget": "Docker.DockerDesktop",
+      "choco": "docker-desktop"
+    },
+    {
+      "winget": "Google.Chrome",
+      "choco": "googlechrome"
+    },
+    {
+      "winget": "Mozilla.Firefox",
+      "choco": "firefox"
+    },
+    {
+      "winget": "Skillbrains.Lightshot",
+      "choco": "lightshot"
+    },
+    {
+      "winget": "Neovim.Neovim",
+      "choco": "neovim"
+    },
+    {
+      "winget": "Spotify.Spotify",
+      "choco": "spotify"
+    },
+    {
+      "winget": "Microsoft.PowerToys",
+      "choco": "powertoys"
+    },
+    {
+      "winget": "Schniz.fnm",
+      "choco": "fnm"
+    },
+    {
+      "winget": "7zip.7zip",
+      "choco": "7zip"
+    },
+    {
+      "winget": "Microsoft.PowerShell",
+      "choco": "powershell-core"
+    },
+    {
+      "winget": "Microsoft.NuGet",
+      "choco": "nuget.commandline"
+    },
+    {
+      "winget": "voidtools.Everything",
+      "choco": "everything"
+    },
+    {
+      "winget": "Nilesoft.Shell",
+      "choco": "nilesoft-shell"
+    },
+    {
+      "winget": "nepnep.neofetch-win",
+      "choco": "na"
+    },
+    {
+      "winget": "Discord.Discord",
+      "choco": "discord"
+    },
+    {
+      "winget": "Bitwarden.Bitwarden",
+      "choco": "bitwarden"
+    },
+    {
+      "winget": "sharkdp.bat",
+      "choco": "bat"
+    },
+    {
+      "winget": "ajeetdsouza.zoxide",
+      "choco": "zoxide"
+    },
+    {
+      "winget": "Zen-Team.Zen-Browser",
+      "choco": "na"
+    },
+    {
+      "winget": "wez.wezterm",
+      "choco": "wezterm"
+    },
+    {
+      "winget": "BurntSushi.ripgrep.MSVC",
+      "choco": "ripgrep"
+    },
+    {
+      "winget": "Git.Git",
+      "choco": "git"
+    },
+    {
+      "winget": "Obsidian.Obsidian",
+      "choco": "obsidian"
+    },
+    {
+      "winget": "TGRMNSoftware.BulkRenameUtility",
+      "choco": "bulkrenameutility"
+    },
+    {
+      "winget": "Klocman.BulkCrapUninstaller",
+      "choco": "bulk-crap-uninstaller"
+    },
+    {
+      "winget": "Yarn.Yarn",
+      "choco": "yarn"
+    },
+    {
+      "winget": "Nushell.Nushell",
+      "choco": "nushell"
+    },
+    {
+      "winget": "Oracle.VirtualBox",
+      "choco": "virtualbox"
+    },
+    {
+      "winget": "na",
+      "choco": "files"
+    },
+    {
+      "winget": "Gyan.FFmpeg",
+      "choco": "ffmpeg-full"
+    },
+    {
+      "winget": "AIMP.AIMP",
+      "choco": "aimp"
+    },
+    {
+      "winget": "VideoLAN.VLC",
+      "choco": "vlc"
+    },
+    {
+      "winget": "Microsoft.WindowsTerminal",
+      "choco": "microsoft-windows-terminal"
+    },
+    {
+      "winget": "Python.Python.3.13",
+      "choco": "python"
+    },
+    {
+      "winget": "OpenJS.NodeJS.LTS",
+      "choco": "nodejs-lts"
+    },
+    {
+      "winget": "Vivaldi.Vivaldi",
+      "choco": "vivaldi"
+    },
+    {
+      "winget": "CoreyButler.NVMforWindows",
+      "choco": "nvm"
+    },
+    {
+      "winget": "RARLab.WinRAR",
+      "choco": "winrar"
+    }
+  ]
+}
