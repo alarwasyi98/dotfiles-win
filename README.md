@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD041 -->
 <!-- ![alt text](/Assets/Images/desktop_3.png) -->
-![alt text](/Assets/Images/gruvbox-terminal.png)
+![alt text](https://github.com/alarwasyi98/dotfiles-win/blob/main/asset/Images/gruvbox-tty.png)
 
 # Abdul Hakim's Windows Dotfiles
 
