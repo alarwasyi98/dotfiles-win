@@ -182,4 +182,4 @@ Show-ColorScript -Name alpha
 Invoke-Expression (&starship init powershell)
 
 # zoxide
-Invoke-Expression (& { (zoxide init powershell | Out-String) })
+Invoke-Expression (& { (zoxide init powershell --cmd cd | Out-String) })
